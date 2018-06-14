@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<template id="test" inherit_id="request_snippet_block" name="Request Snippet">
+			<xpath expr="//div[@id='request_snippet']" position="inside">
+				<div>
+					<!-- image -->
+					<div class="oe_snippet_thumbnail">
+						<img src="/request_snippet/static/src/img/img_for_snippet.png" class="oe_snippet_thumbnail_img" />
+						<span class="oe_snippet_thumbnail_title">
+							Display 2
+						</span>
+					</div>
+
+					<!-- snippet -->
+					<section class="oe_snippet_body form_options">
+						<div class="container">
+							<table id="table" class="table">
+
+								<thead>
+									<tr>
+										<th scope="col">ID</th>
+										<th scope="col">NAME</th>
+										<th scope="col">MODEL</th>
+									</tr>
+								</thead>
+
+								<tbody>
+								</tbody>
+
+							</table>
+						</div>
+					</section>
+				</div>
+			</xpath>
+		</template>
+
+	</data>
+</openerp>

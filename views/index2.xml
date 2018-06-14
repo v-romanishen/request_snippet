@@ -1,0 +1,17 @@
+<openerp>
+<data>
+
+        <template id="r_test">
+            <t t-call="website.layout">
+                <t t-set="title">Academy</t>
+                <div class="oe_structure">
+                    <div class="container">
+                        <h1>Some some BIG TEXT</h1>
+                        
+                    </div>
+                </div>
+            </t>
+        </template>
+
+</data>
+</openerp>

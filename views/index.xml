@@ -1,0 +1,42 @@
+<openerp>
+    <data>
+
+        <template id="index">
+            <t t-call="website.layout">
+                <t t-set="title">Academy</t>
+                <div class="oe_structure">
+                    <div class="container">
+                        <h1>Some some BIG TEXT</h1>
+                    
+                        <t t-if="not partners">
+                            <p class="mb0">There are currently no partners in your account.</p>
+                        </t>
+                        <t t-if="partners">
+                            <div class="table-responsive">
+                                <table class="table table-hover mb0">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 10%;">No.</th>
+                                            <th style="width: 75%;">Name</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <t t-foreach="partners" t-as="partner">
+                                            <tr>
+                                                <td><span t-esc="partner.id"/></td>
+                                                <td><span t-esc="partner.name"/></td>
+                                            </tr>
+                                        </t>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </t>
+
+                    </div>
+                </div>
+            </t>
+        </template>
+
+
+    </data>
+</openerp>

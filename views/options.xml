@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+<data>
+    <template id="request_snippet_testimonial_opt" name="Request Snippet Testimonial Options" inherit_id="website.snippets">
+        <xpath expr="//div[@id='snippet_options']" position="inside">
+
+			<div data-snippet-option-id="request_snippet_form_settings" data-selector=".form_options">
+				<li class="dropdown-submenu">
+					<a tabindex="-1" href="#">
+						Form Options
+					</a>
+					<ul class="dropdown-menu">
+						<li data-value="button js_form_settings">
+							<!-- <a>Option 1.1</a> -->
+							<a href="#" class="button js_form_settings">
+								Change Form Settings
+							</a>
+						</li>
+						<li data-value="option_color">
+							<a>Change Color "Red"</a>
+						</li>
+					</ul>
+                </li>
+			</div>
+
+			<!-- ===TEST OPTION=== -->
+			<!-- <div data-snippet-option-id="next_form_settings" data-selector=".table_options">
+				<li class="dropdown-submenu">
+					<a tabindex="-1" href="#">
+						Next Settings
+					</a>
+					<ul class="dropdown-menu">
+						<li data-value="option_1">
+							<a>Change Setting 1</a>
+						</li>
+						<li data-value="option_2">
+							<a>Change Setting 2</a>
+						</li>
+					</ul>
+                </li>
+			</div> -->
+
+        </xpath>
+    </template>
+</data>
+</openerp>

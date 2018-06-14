@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+    <data>
+
+        <template id="request_snippet_style" name="My style" inherit_id="website.assets_frontend"> 
+            <xpath expr="." position="inside">
+                <link href="/request_snippet/static/src/less/style.less" rel="stylesheet" type="text/less"/>
+            </xpath>
+            <xpath expr="." position="inside">
+                <link href="/request_snippet/static/src/css/style.css" rel="stylesheet" type="text/css"/>
+            </xpath>
+            <!-- <xpath expr="." position="inside">
+                <link href="/request_snippet/static/lib/multi-select/css/multi-select.css" rel="stylesheet" type="text/css"/>
+            </xpath> -->
+        </template>
+
+        <template id="request_snippet_script" inherit_id="website.assets_editor" name="Test Editor">
+			<xpath expr="/t" position="inside">
+				<script type="text/javascript" src="/request_snippet/static/src/js/script.js" />
+			</xpath>
+            <!-- <xpath expr="/t" position="inside">
+				<script type="text/javascript" src="/request_snippet/static/lib/multi-select/js/jquery.multi-select.js" />
+			</xpath>
+            <xpath expr="/t" position="inside">
+				<script type="text/javascript" src="/request_snippet/static/lib/quicksearch/js/jquery.quicksearch.js" />
+			</xpath> -->
+		</template>
+
+    </data>
+</openerp>

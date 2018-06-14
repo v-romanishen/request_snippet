@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+<data>
+    <template id="request_snippet_block" inherit_id="website.snippets" name="My Request Snippet">
+        <xpath expr="//ul[@class='nav navbar-nav nav-tabs']" position="inside">
+            <li>
+                <a href="#request_snippet" data-toggle="tab">
+                    My Snippet (Form)
+                </a>
+            </li>
+        </xpath>
+        <xpath expr="//div[@class='scroll']//div[@class='tab-content']" position="inside">
+			<div id="request_snippet" class="tab-pane"></div>
+        </xpath>
+    </template>
+
+</data>
+</openerp>
