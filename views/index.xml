@@ -8,6 +8,33 @@
                     <div class="container">
                         <h1>Some some BIG TEXT</h1>
                     
+                        <div class="row test_row_for_css">
+                            <div class="col-sm-4">
+                                <select multiple="multiple" id="my-select" class="searchable" name="my-select[]">
+                                  <option value='elem_1'>elem 1</option>
+                                  <option value='elem_2'>elem 2</option>
+                                  <option value='elem_3'>elem 3</option>
+                                  <option value='elem_4'>elem 4</option>
+                                  ...
+                                  <option value='elem_100'>elem 100</option>
+                                </select>
+                            </div>
+                
+                            <!-- <div class="col-sm-4">
+                                    <select multiple="multiple" id="my-select2" class="my-my" name="my-select[]">
+                                      <option value='elem_1'>elem 1</option>
+                                      <option value='elem_2'>elem 2</option>
+                                      <option value='elem_3'>elem 3</option>
+                                      <option value='elem_4'>elem 4</option>
+                                      ...
+                                      <option value='elem_100'>elem 100</option>
+                                    </select>
+                                </div> -->
+                        </div>
+                        <t t-js="ctx">
+                            $('.searchable').multiSelect();
+                        </t>
+
                         <t t-if="not partners">
                             <p class="mb0">There are currently no partners in your account.</p>
                         </t>

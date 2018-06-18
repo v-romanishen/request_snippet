@@ -22,13 +22,12 @@ class RequestSnippet(http.Controller):
 
     @http.route('/request/test/test_request', type='json', auth="none")
     def test_request(self, **kw):
-        # list = ["one", "two", "tree", "'name':'vasya'", "'name':'roma'"]
         Partners = http.request.env['res.partner'].sudo().search([])
         respons = []
         for rec in Partners:
             respons.append( {'id': rec.id, 'name': rec.name} )
 
-        _logger.info("___________RESPONS___________ %s", respons)
+        # _logger.info("___________RESPONS___________ %s", respons)
         return {
             'partners': respons
         }
