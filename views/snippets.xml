@@ -15,7 +15,7 @@
 					<!-- snippet -->
 					<section class="oe_snippet_body form_options">
 						<div class="container">
-							<table id="table" class="table">
+							<table id="table" class="table request-table">
 
 								<thead>
 									<tr>

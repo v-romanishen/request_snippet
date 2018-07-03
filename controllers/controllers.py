@@ -27,7 +27,7 @@ class RequestSnippet(http.Controller):
         for rec in Partners:
             respons.append( {'id': rec.id, 'name': rec.name} )
 
-        # _logger.info("___________RESPONS___________ %s", respons)
+        _logger.info("___________RESPONS___________ %s", respons)
         return {
             'partners': respons
         }

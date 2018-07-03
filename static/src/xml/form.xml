@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <templates id="template" xml:space="preserve">
 	<t t-name="request_snippet.form_for_snippet">
+
 		<div class="modal fade">
 			<div class="modal-dialog">
 				<div class="modal-content">
+				
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
 						<h4 class="modal-title">Название модали </h4>
@@ -15,7 +17,7 @@
 						<form role="form" id="partners_form" class="test_form">
 							<div class="form-group">
 								<select id="custom-headers" class="form-control custom" multiple="multiple">
-                  <!-- options -->
+                  					<!-- options -->
 								</select>
 							</div>
 							<button type="submit" class="btn btn-default">Отправить</button>
@@ -24,7 +26,7 @@
 
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-						<button type="button" class="btn btn-primary">Сохранить изменения</button>
+						<button type="button" class="btn btn-primary save">Сохранить изменения</button>
 					</div>
 
 				</div><!-- /.modal-content -->
